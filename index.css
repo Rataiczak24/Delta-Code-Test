@@ -1,0 +1,662 @@
+body, html {
+	margin: 0;
+	font-family: 'Roboto';
+	height: 100%;
+	
+	width: 100%;
+    padding: 0px;
+/*     overflow-x: hidden; */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Navbar links */
+#navbar label {
+  color: #000000;
+  text-align: center;
+  padding: 25px;
+}
+
+#border-line {
+	border-left: 1px solid lightgray;
+}
+
+#home-interior {
+	background-image: url("photos/home_interior.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#find-home-text {
+	color: #ffffff;
+	justify-content: center;
+	display: grid;
+	width: 50%;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+.grid-container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 2px;
+  background-color: black;
+  padding: 10px;
+  width: 500px;
+}
+
+#city-state {
+	grid-column-start: 1;
+	grid-column-end: 7;
+}
+
+#property-type {
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+
+#min-price {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#max-price {
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+
+#beds {
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+#baths {
+	grid-column-start: 6;
+	grid-column-end: 7;
+}
+
+#search {
+	grid-column-start: 7;
+	grid-column-end: 9;
+	background-color: #30a1de;
+	color: #ffffff;
+}
+
+#circle-buttons {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2px;
+  padding: 10px;
+  width: 500px;
+}
+
+
+
+#home-exterior {
+	background-image: url("photos/home_exterior.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.featured-homes-grid-container {
+  display: grid;
+/*   width: 60%; */
+  margin: 0 auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2px;
+  background-color: white;
+  padding: 10px;
+}
+
+#featured-homes-text {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	justify-content: center;
+	margin: 0 auto;
+	color: #0073ad;
+}
+
+.home1-div {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.home2-div {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.home3-div {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.home1 {
+	margin: 0 auto;
+}
+
+.home2 {
+	margin: 0 auto;
+}
+
+.home3 {
+	margin: 0 auto;
+}
+
+.home1, .home1-family {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.home2, .home2-family {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.home3, .home3-family {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+#family-services {
+	background-color: lightgray;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
+}
+
+.family-services-grid-container {
+	display: grid;
+/* 	width: 60%; */
+	margin: 0 auto;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+}
+
+#family-services-text {
+	color: #0073ad;
+	justify-content: center;
+	display: grid;
+	width: 50%;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+.home1-text {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	color: #0073ad;
+	margin-top: 0px;
+}
+
+.home2-text {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	color: #0073ad;
+	margin-top: 0px;
+}
+
+.home3-text {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	color: #0073ad;
+	margin-top: 0px;
+}
+
+#family-services p {
+	margin-top: 0px;
+}
+
+.family-services-buttons {
+	background-color: #0073ad;
+	color: #ffffff;
+	text-align: left;
+}
+
+#contact {
+	background-color: #0073ad;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact-grid-container {
+	display: grid;
+	width: 60%;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+}
+
+.contact-text {
+	color: #ffffff;
+}
+
+.contact-form {
+	border-radius: 5px;
+	background-color: #005789;
+	padding: 20px;
+	
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.blog-partners {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+
+.contact-form input, textarea {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#contact-button {
+	text-align: left;
+	color: #ffffff;
+	background-color: #30a1de;
+}
+
+.blog-text1 {
+	color: #30a1de;
+}
+
+.blog-text2 {
+	color: #30a1de;
+}
+
+h4 {
+	color: #44b7f4;
+}
+
+#partners {
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#guild {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#real-estate-company {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#luxury-portfolio {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#sticky-footer {
+  overflow: hidden;
+  background-color: #003660;
+  padding: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#social-media {
+	float: right;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	
+	body, html {
+	margin: 0;
+	font-family: 'Roboto';
+	height: 100%;
+	font-size: 12px;
+	width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+	}
+	
+	.mobile-nav {
+	  overflow: hidden;
+	  background-color: #ffffff;
+	  display: block;
+	  position: fixed; /* Set the navbar to fixed position */
+	  top: 0; /* Position the navbar at the top of the page */
+	  width: 100%; /* Full width */
+	}
+	
+	.mobile-nav #myLinks {
+	  display: none;
+	}
+	
+	.mobile-nav a {
+	  color: black;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  display: block;
+	}
+	
+	.mobile-nav a.icon {
+	  background: white;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  margin-top: -12px;
+	}
+	
+	.mobile-nav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	.active {
+	  color: white;
+	}
+	
+	/* Style the navbar */
+	#navbar {
+	  overflow: hidden;
+	  background-color: #ffffff;
+	  padding: 15px;
+	  display: flex;
+	  justify-content: center;
+	  display: none;
+	}
+	
+	#delta-logo {
+		height: 25px;
+		width: 100px;
+	}
+	
+	/* Navbar links */
+	#navbar label {
+	  color: #000000;
+	  text-align: center;
+	  padding: 1px;
+	  display: none;
+	}
+	
+	#border-line {
+		border-left: 1px solid lightgray;
+		display: none;
+	}
+	
+	#home-interior {
+	background-image: url("photos/home_interior.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+	#find-home-text {
+		color: #ffffff;
+		justify-content: center;
+		display: grid;
+		width: 100%;
+		margin: 0 auto;
+		grid-template-columns: auto auto auto auto auto auto auto auto;
+	}
+	
+	.grid-container {
+	  display: grid;
+	  margin: 0 auto;
+	  grid-template-columns: auto auto auto;
+	  grid-gap: 2px;
+	  background-color: black;
+	  padding: 10px;
+	  width: 400px;
+	}
+	
+	#city-state {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	
+	#property-type {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		background-color: white;
+	}
+	
+	#min-price {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background-color: white;
+	}
+	
+	#max-price {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		background-color: white;
+	}
+	
+	#beds {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		background-color: white;
+	}
+	
+	#baths {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background-color: white;
+	}
+	
+	#search {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		background-color: #30a1de;
+		color: #ffffff;
+	}
+	
+	#circle-buttons {
+	  display: grid;
+	  width: 50%;
+	  margin: 0 auto;
+	  grid-template-columns: auto auto auto;
+	  grid-gap: 2px;
+	}
+	
+	#circle-one {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin: 0 auto;
+	}
+	#circle-two {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin: 0 auto;
+	}
+	#circle-three {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin: 0 auto;
+	}
+	
+	#home-exterior {
+	background-image: url("photos/home_exterior.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
+	}
+	
+	.featured-homes-grid-container {
+	  display: grid;
+	/*   width: 60%; */
+	  margin: 0 auto;
+	  grid-template-columns: auto auto auto;
+	  grid-gap: 2px;
+	  background-color: white;
+	  padding: 10px;
+	}
+	
+	#featured-homes-text {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		justify-content: center;
+		margin: 0 auto;
+		color: #0073ad;
+	}
+	
+	#family-services {
+		background-color: lightgray;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#family-services-text {
+		color: #0073ad;
+		justify-content: center;
+		display: grid;
+		width: 100%;
+		margin: 0 auto;
+		grid-template-columns: auto auto auto auto auto auto auto auto;
+	}
+
+	.family-services-grid-container {
+		display: grid;
+	/* 	width: 60%; */
+		margin: 0 auto;
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
+	}
+	
+	.home1-div, .home2-div, .home3-div {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	
+	.home1 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin: 0 auto;
+	}
+	
+	.home2 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin: 0 auto;
+	}
+	
+	.home3 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin: 0 auto;
+	}
+	
+	.home1-family, .home2-family, .home3-family {
+		display: none;
+	}
+	
+	.home1-text {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	color: #0073ad;
+	margin-top: 0px;
+	}
+	
+	.home2-text {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		color: #0073ad;
+		margin-top: 0px;
+	}
+	
+	.home3-text {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		color: #0073ad;
+		margin-top: 0px;
+	}
+	
+	#family-services p {
+	margin-top: 0px;
+	}
+	
+	.family-services-buttons {
+		background-color: #0073ad;
+		color: #ffffff;
+		text-align: left;
+	}
+	
+	.contact-form {
+		border-radius: 5px;
+	background-color: #005789;
+	padding: 20px;
+	
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	}
+
+	.blog-partners {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
+	
+	#guild, #real-estate-company, #luxury-portfolio {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin-bottom: 20px;
+	}
+	
+	#sticky-footer {
+	  overflow: hidden;
+	  background-color: #003660;
+	  padding: 15px;
+	  justify-content: center;
+	}
+
+
+}

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=yes">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Evaluation - Level 2</title>
+</head>
+
+<body>
+	
+	<div id="navbar">
+		<img src="photos/delta_logo.png" id="delta-logo" height="50">
+		<label>FIND A HOME</label>
+		<label>FIND AN AGENT</label>
+		<label>CAREERS</label>
+		<label>CONTACT US</label>
+		<label id="border-line">(555) 555-5555</label>
+	</div> <!-- end navbar div -->
+	
+	<!-- Top Navigation Menu -->
+	<div class="mobile-nav">
+	  <img src="photos/delta_logo.png" class="active" id="delta-logo">
+	  <div id="myLinks">
+	    <a href="#findhome">FIND A HOME</a>
+	    <a href="#findagent">FIND AN AGENT</a>
+	    <a href="#careers">CAREERS</a>
+	    <a href="#contact">CONTACT US</a>
+	    <a href="#phone">(555) 555-5555</a>
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div> <!-- end mobile nav div -->
+
+<! ------ 1st Page ------>
+	<div id="home-interior">
+		
+		<br><br><br><br><br><br><br><br>
+		
+		<h1 id="find-home-text">FIND YOUR LAS VEGAS HOME</h1>
+		
+		<div class="grid-container">
+			
+				<input type="text" placeholder="Enter a City & State, Subdivision. or MLS#" id="city-state">
+				
+				<select id="property-type">
+					<option selected disabled>Property Type</option>
+					<option>Single Family Home</option>
+					<option>Condominium</option>
+					<option>Apartment</option>
+				</select>
+				
+				<br>
+			
+				<select id="min-price">
+					<option selected disabled>Minimum Price</option>
+					<option>No Minimum</option>
+					<option>$100,000</option>
+					<option>$125,000</option>
+					<option>$150,000</option>
+					<option>$175,000</option>
+					<option>$200,000</option>
+				</select>
+				
+				<select id="max-price">
+					<option selected disabled>Maximum Price</option>
+					<option>No Maximum</option>
+					<option>$150,000</option>
+					<option>$175,000</option>
+					<option>$200,000</option>
+					<option>$225,000</option>
+					<option>$250,000</option>
+				</select>
+				
+				<select id="beds">
+					<option selected disabled>Beds</option>
+					<option>1+</option>
+					<option>2+</option>
+					<option>3+</option>
+					<option>4+</option>
+				</select>
+				
+				<select id="baths">
+					<option selected disabled>Baths</option>
+					<option>1+</option>
+					<option>2+</option>
+					<option>3+</option>
+					<option>4+</option>
+				</select>
+				
+				<input type="button" id="search" value="SEARCH HOMES &raquo;">
+		
+		</div> <!-- end grid container div -->
+		
+		<div id="circle-buttons">
+			
+			<img src="photos/Circle%20One.png" id="circle-one">
+			
+			<img src="photos/Circle%20Two.png" id="circle-two">
+			
+			<img src="photos/Circle%20Three.png" id="circle-three">
+			
+		</div> <!-- end circle buttons div -->
+		
+	</div> <!-- end home interior div -->
+	
+<! ------ 2nd Page ------>
+	<div id="home-exterior">
+		
+		<br><br><br><br>
+		
+		<div class="featured-homes-grid-container">
+			
+			<h1 id="featured-homes-text">FEATURED LAS VEGAS AREA HOMES</h1>
+			
+			<br>
+			
+			<img class="home1" src="photos/Home%201.png">
+			<img class="home2" src="photos/Home%202.png">
+			<img class="home3" src="photos/Home%203.png">
+			
+		</div> <!-- end featured homes grid container -->
+		
+		<br>
+		
+	</div> <!-- end home exterior div -->
+	
+	
+<! ------ 3rd Page ------>	
+	<div id="family-services">
+		
+		<br><br><br><br>
+		
+		<h1 id="family-services-text">Explore our Family of Services</h1>
+		
+		<div class="family-services-grid-container">
+		
+		<br>
+		
+		<div class="home1-div">
+		<img class="home1-family" src="photos/buy_home.png">
+		<h1 class="home1-text">Buy a Home</h1>
+		<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+		<input class="family-services-buttons" type="button" value="SEARCH HOMES NOW &raquo;">
+		</div>
+		
+		<div class="home2-div">
+		<img class="home2-family" src="photos/sell_home.png">
+		<h1 class="home2-text">Sell a Home</h1>
+		<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+		<input class="family-services-buttons" type="button" value="WHAT'S MY HOME WORTH &raquo;">
+		</div>
+		
+		<div class="home3-div">
+		<img class="home3-family" src="photos/relocation.png">
+		<h1 class="home3-text">Relocation</h1>
+		<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+		<input class="family-services-buttons" type="button" value="MEET OUR RELO TEAM &raquo;">
+		</div>
+			
+		</div> <!-- end family services grid container div -->
+		
+		<br>
+		
+	</div> <!-- end family services div -->
+	
+<! ------ 4th Page ------>	
+	<div id="contact" style="overflow:auto">
+		
+		<br>
+		
+		<div class="contact-grid-container">
+			
+			<br>
+			
+			<div class="contact-form">
+			<h3 id="intouch" class="contact-text">Get in Touch With Us</h3>
+			<input type="text" placeholder="First and Last Name"><br>
+			<input type="text" placeholder="Email Address"><br>
+			<textarea rows="3" cols="30" placeholder="Comments"></textarea><br>
+			<input  type="button" value="CONTACT US NOW &raquo;" id="contact-button">
+			</div>
+			
+			<div class="blog-partners">
+			<h3 id="readblog" class="contact-text">Read Our Blog</h3>
+			<h4 class="blog-title1">First Blog Title Should Go in This Location</h4><br>
+			<p class="blog-text1">This is Photoshop's version of Lorem Ipsum, Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+			
+			<br>
+			
+			<h4 class="blog-title2">First Blog Title Should Go in This Location</h4><br>
+			<p class="blog-text2">This is Photoshop's version of Lorem Ipsum, Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+			
+			<br>
+			
+			<h3 id="partners" class="contact-text">Meet Our Partners</h5>
+			
+			<br>
+			
+			<img id="guild" src="photos/guild_logo.png">
+			<img id="real-estate-company" src="photos/real_estate_companies_logo.png">
+			<img id="luxury-portfolio" src="photos/luxury_portfolio.png">
+			
+		</div> <!-- end contact grid container div -->
+		
+	</div> <!-- end contact div -->
+	
+	<!-- Footer -->
+<footer id="sticky-footer">
+  
+  <label style="color: #ffffff;">ONLINE HOMES MAGAZINE</label>&emsp;
+  <label style="color: #ffffff;">CONTACT US</label>&emsp;
+  <label style="color: #ffffff;">800-966-7669</label>
+  
+  <div id="social-media">
+  <img src="photos/facebook_logo.png">
+  <img src="photos/youtube_logo.png">
+  <img src="photos/twitter_logo.png">
+  <img src="photos/rss_logo.png">
+  <img src="photos/google_plus.png">
+  </div>
+  
+  <br><br>
+  
+  <hr>
+  
+  <br>
+  
+  <img src="photos/realtor_logo.png">
+  <img src="photos/home_logo.png">
+  
+  <div style="color: #44b7f4;">Terms of Use and Privacy Policy&emsp;Agent Login</div>
+  <div style="color: white;">This site is hosted, designed, and copyright &copy; 1994 - 2012 by Delta Media Group, Inc.</div>
+
+</footer>
+<!-- Footer -->
+
+<script>
+		
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the header
+		var header = document.getElementById("navbar");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+		
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+		
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+		
+</script>	
+	
+	
+</body>
+</html>
